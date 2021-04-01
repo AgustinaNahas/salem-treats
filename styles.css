@@ -11,7 +11,7 @@ label, p, span, div, button {
 
 .parallax {
     /* The image used */
-    background-image: url("images/witch-pattern-purple.png");
+    background-image: url("images/witch-pattern.png");
 
     /* Set a specific height */
     min-height: 100vh;
@@ -21,13 +21,23 @@ label, p, span, div, button {
     background-position: center;
     background-repeat: repeat;
     background-size: initial;
+
+    margin-top: -75px;
+}
+
+.parallax-filter {
+    background-color: rgba(3, 32, 58, 0.5 );
+    width: 100%;
+    height: calc(100% - 75px);
+    position: absolute;
+    top: 75px;
 }
 
 .jumbotron {
-    margin-top: 76px;
-    background-color: rgba(3, 32, 58, 0.6 );
+    background-color: rgba(3, 32, 58, 0.8 );
     color: white;
     position: absolute;
+    margin-top: 0;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -41,6 +51,77 @@ h1, h2 {
     font-weight: bold;
 }
 
+.carrousel {
+    position: absolute;
+    right: 200px;
+    top: -50%;
+}
+
+.carrousel img {
+    max-height: 500px;
+    position: absolute;
+    right: 100%;
+}
+
+.carrousel_img-1{
+    opacity: 0;
+    animation: fade 10s linear infinite;
+}
+
+.carrousel_img-2{
+    opacity: 0;
+    animation: fade 10s linear 1s infinite;
+}
+
+.carrousel_img-3{
+    opacity: 0;
+    animation: fade 10s linear 2s infinite;
+}
+
+.carrousel_img-4{
+    opacity: 0;
+    animation: fade 10s linear 3s infinite;
+}
+
+.carrousel_img-5{
+    opacity: 0;
+    animation: fade 10s linear 4s infinite;
+}
+
+.carrousel_img-6{
+    opacity: 0;
+    animation: fade 10s linear 5s infinite;
+}
+
+.carrousel_img-7{
+    opacity: 0;
+    animation: fade 10s linear 6s infinite;
+}
+
+.carrousel_img-8{
+    opacity: 0;
+    animation: fade 10s linear 7s infinite;
+}
+
+.carrousel_img-9{
+    opacity: 0;
+    animation: fade 10s linear 8s infinite;
+}
+
+.carrousel_img-10{
+    opacity: 0;
+    animation: fade 10s linear 9s infinite;
+}
+
+
+@keyframes fade {
+    0%   {opacity: 0;}
+    5%   {opacity: 1;}
+    10%   {opacity: 1;}
+    15%   {opacity: 0;}
+    100%   {opacity: 0;}
+}
+
 p.lead{
     font-family: 'Lato', sans-serif;
 }
@@ -51,37 +132,6 @@ form {
 
 label, h2 {
     color: white;
-}
-
-
-.left {
-    -moz-transform: rotate(-50deg) scaleX(-1);
-    -o-transform: rotate(-50deg) scaleX(-1);
-    -webkit-transform: rotate(-50deg) scaleX(-1);
-    transform: rotate(-50deg) scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
-.right {
-    -moz-transform: rotate(-50deg) scaleX(1);
-    -o-transform: rotate(-50deg) scaleX(1);
-    -webkit-transform: rotate(-50deg) scaleX(1);
-    transform: rotate(-50deg) scaleX(1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
-#wunderbiene {
-    transition: transform .15s
-}
-
-#wunderbiene img {
-    width: 50px;
-    position: relative;
-    z-index: 100;
-    left:-50%;
-    top: 50px;
 }
 
 .busqueda {
